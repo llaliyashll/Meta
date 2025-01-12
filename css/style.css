@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family:Orbitron, Poppins, sans-serif;
+  font-family: Orbitron, Poppins, sans-serif;
 }
 body {
   background: #010208;
@@ -16,7 +16,7 @@ body {
   margin-inline: auto;
 }
 h1 {
-  font-family:Orbitron ;
+  font-family: Orbitron;
   color: #ffffff;
   font-size: clamp(0.188rem, -0.653rem + 4.2vw, 2.5rem);
 }
@@ -202,15 +202,17 @@ button {
   padding-block: 60px;
 }
 .work {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-}
-.work-text {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 40px;
+
+}
+.work-text {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
 }
 .work-text h1 {
   /* //! */
@@ -227,25 +229,35 @@ button {
 }
 /* //! */
 .box {
-  background: #d40e0e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
 }
 .work-box {
-  /* background-color: #ffffff; */
+  padding: 20px;
+  max-width: 381px;
+  height: 434px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
   gap: 20px;
+  background: #090823
+
 }
+/* //! */
 .work-block {
-  background: rgb(13, 13, 13);
-}
-.work-box img {
-  padding-block: 13px;
+  /* background: #090823 */
 }
 
 .work-btn {
-  gap: 20px;
-  padding-block: 20px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 .work-btn button:first-child {
-  padding: 10px 26px;
+  padding: 6px 16px;
   font-size: clamp(0.063rem, -0.324rem + 1.93vw, 1.125rem);
   border-radius: 6px;
   border: none;
@@ -258,7 +270,7 @@ button {
   background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
 }
 .work-btn button:last-child {
-  padding: 10px 16px;
+  padding: 10px 1px;
   font-size: clamp(0.063rem, -0.324rem + 1.93vw, 1.125rem);
   border-radius: 6px;
   border: none;
@@ -272,7 +284,9 @@ button {
 #activity {
   padding-block: 60px;
 }
-.activity {
+.activity img {
+  width: 100%;
+  max-width: 1100px;
 }
 .activity-text {
   display: flex;

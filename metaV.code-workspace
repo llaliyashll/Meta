@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../meta1-master/meta1-master/image"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "metaV"
+  }
+}
