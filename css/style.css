@@ -4,10 +4,10 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  background: #000;
+  font-family:Orbitron, Poppins, sans-serif;
 }
 body {
-  font-family: Orbitron, Poppins, sans-serif;
+  background: #010208;
 }
 .container {
   width: 100%;
@@ -16,6 +16,7 @@ body {
   margin-inline: auto;
 }
 h1 {
+  font-family:Orbitron ;
   color: #ffffff;
   font-size: clamp(0.188rem, -0.653rem + 4.2vw, 2.5rem);
 }
@@ -31,10 +32,12 @@ p {
   font-family: Poppins;
   font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
   color: white;
+  /* padding-block: 17px; */
 }
 
 button {
   color: #ffffff;
+  background: #000;
   font-size: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
 }
 
@@ -48,24 +51,22 @@ button {
   justify-content: space-between;
 }
 .header h1 {
-  font-size: clamp(0.063rem, -0.528rem + 2.95vw, 1.688rem);
+  font-size: clamp(1.375rem, 1.167rem + 1.04vw, 2rem);
 }
 .header nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 50px;
 }
 .header nav a {
   font-family: Poppins;
   color: #ffffff;
-  font-size: clamp(0.313rem, 0.108rem + 1.02vw, 0.875rem);
-  font-weight: 400;
+  font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+  /* font-size: clamp(0.313rem, 0.108rem + 1.02vw, 0.875rem); */
 }
 /* HEADER FINISH  */
 
 /* //? */
-META START #meta {
+#meta {
   padding-block: 60px;
 }
 
@@ -150,13 +151,7 @@ META START #meta {
   font-weight: 400;
   line-height: 27px;
 }
-/* //? */
-/* META FINISH */
-/* @media (max-width:345px) {
-  
-  } */
-/* //? */
-META FINISH #what {
+#what {
   padding-block: 60px;
 }
 .what {
@@ -175,6 +170,8 @@ META FINISH #what {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  /* //! */
+  /* padding-block: 17px; */
 }
 .what-text h1 span {
   background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
@@ -187,21 +184,12 @@ META FINISH #what {
   /* font-size: 35px; */
   font-weight: 600;
 }
-.what-text p {
-  /* //! */
-  /* font-size: 18px; */
-  font-weight: 400;
-  color: #ffffffcc;
-  padding-block: 17px;
-}
 .what-btn {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
 }
 .what-btn button {
-  width: 137px;
-  height: 44px;
+  padding: 10px 16px;
   color: #ffffff;
   background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
   border-radius: 6px;
@@ -233,38 +221,28 @@ META FINISH #what {
   margin-top: 100px;
 }
 .work-text p {
-  /* //! */
-  /* font-size: 17px; */
   font-weight: 400;
   color: #ffffff;
   margin-bottom: 100px;
 }
-.work-block {
-  background: white;
-}
-.work-block img {
-  padding-block: 32px;
-}
-.work-block h3 {
-  /* //! */
-  font-size: 20px;
-  font-weight: 600;
-}
-.work-block p {
-  font-family: Poppins;
-  /* //! */
-  /* font-size: 14px; */
-  font-weight: 400;
-
-  padding-block: 23px;
+/* //! */
+.box {
+  background: #d40e0e;
 }
 .work-box {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   gap: 20px;
+}
+.work-block {
+  background: rgb(13, 13, 13);
+}
+.work-box img {
+  padding-block: 13px;
 }
 
 .work-btn {
   gap: 20px;
+  padding-block: 20px;
 }
 .work-btn button:first-child {
   padding: 10px 26px;
@@ -280,7 +258,7 @@ META FINISH #what {
   background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
 }
 .work-btn button:last-child {
-  padding: 10px 26px;
+  padding: 10px 16px;
   font-size: clamp(0.063rem, -0.324rem + 1.93vw, 1.125rem);
   border-radius: 6px;
   border: none;
@@ -301,21 +279,16 @@ META FINISH #what {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-block: 40px;
 }
 .activity-text h1 {
-  /* //! */
-  /* font-size: 37px; */
   font-weight: 600;
   color: #ffffff;
-  padding-block: 20px;
-  margin-top: 100px;
+  /* margin-top: 30px; */
 }
 .activity-text p {
-  /* //! */
-  /* font-size: 17px; */
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 100px;
 }
 @media (max-width: 1174px) {
   .what img {
@@ -347,6 +320,13 @@ META FINISH #what {
   color: transparent;
   background-clip: text;
 }
+.info h4 {
+}
+.info a {
+  font-size: 23px;
+  color: #ffffff;
+}
+
 .meta-f p {
 }
 .footer {
